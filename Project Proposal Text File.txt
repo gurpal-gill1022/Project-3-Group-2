@@ -6,13 +6,13 @@ Locations: Canadian Provinces and US States
 
 Questions to Analyze:
 
-1. Which state won the most titles between 1958 - 2018, per decade? By Sport?  - trend line 
+1. Which state won the most titles between 1958 - 2018, per decade? By Sport?  - trend line (top 5 states per decade)
 
 2. Out of the state with the most titles, which city holds the most titles? - bubble chart
 
 3. Out of the state with the most titles, which sport holds the most titles? - pie chart
 
-4. Map showing 
+4. Map showing the current (2018) most titles? With markers or heat map
 
 ***Put all findings from above on a map using markers***
 
