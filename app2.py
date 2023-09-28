@@ -25,20 +25,5 @@ def index():
 
     return str(data)
 
-@app.route('/most')
-def fitlered():
-# Access a collection in your database
-    collection = db['titles_clean']
-
-    query_filter = {
-        'field_name': 'value_to_match'  # Example criteria
-    }
-
-    # Query the collection with the filter
-    documents = collection.find(query_filter)
-
-    # Convert documents to a list
-    data = [doc for doc in documents]
-
 if __name__ == '__main__':
 	app.run()
