@@ -1,29 +1,29 @@
-from flask import Flask, request
+from flask import Flask, jsonify
 from pymongo import MongoClient
 
 app = Flask(__name__)
+mongo_host = 'localhost'
+mongo_port = 27017
+mongo_db = 'titles_db'
 
-# root route
+# Create a MongoClient instance
+client = MongoClient(mongo_host, mongo_port)
+
+# Access your database
+db = client[mongo_db]
+
 @app.route('/')
-def hello_world():
-	return 'Hello, World!'
+def index():
+    # Access a collection in your database
+    collection = db['titles_clean']
 
-# Set up MongoDB connection and collection
-client = MongoClient('mongodb://localhost:27017/')
+    # Query the collection (e.g., find all documents)
+    documents = collection.find()
 
-# Create database named demo if they don't exist already
-db = client['titles_db']
+    # Convert documents to a list
+    data = [doc for doc in documents]
 
-# Create collection named data if it doesn't exist already
-collection = db['titles_clean']
-
-# Add data to MongoDB route
-@app.route('/read')
-def add_data():
-	# Insert data into MongoDB
-
-	return (collection.find_one())
-
+    return str(data)
 
 if __name__ == '__main__':
 	app.run()
