@@ -1,0 +1,265 @@
+Year,Pro Sport,Winning Team,City,State
+1958,NBA,St. Louis Hawks,St. Louis, MO
+1958,NHL,Montreal Canadiens,Montreal, QC
+1958,MLB,New York Yankees,New York City, NY
+1958,NFL,Baltimore Colts,Baltimore, MD
+1959,NBA,Boston Celtics,Greater Boston, MA
+1959,NHL,Montreal Canadiens,Montreal, QC
+1959,MLB,Los Angeles Dodgers,Greater Los Angeles, CA
+1959,NFL,Baltimore Colts,Baltimore, MD
+1960,NBA,Boston Celtics,Greater Boston, MA
+1960,NHL,Montreal Canadiens,Montreal, QC
+1960,MLB,Pittsburgh Pirates,Pittsburgh, PA
+1960,NFL,Philadelphia Eagles,Greater Philadelphia, PA
+1961,NBA,Boston Celtics,Greater Boston, MA
+1961,NHL,Chicago Black Hawks,Chicago, IL
+1961,MLB,New York Yankees,New York City, NY
+1961,NFL,Green Bay Packers,Green Bay, WI
+1962,NBA,Boston Celtics,Greater Boston, MA
+1962,NHL,Toronto Maple Leafs,Toronto, ON
+1962,MLB,New York Yankees,New York City, NY
+1962,NFL,Green Bay Packers,Green Bay, WI
+1963,NHL,Toronto Maple Leafs,Toronto, ON
+1963,NBA,Boston Celtics,Greater Boston, MA
+1963,MLB,Los Angeles Dodgers,Greater Los Angeles, CA
+1963,NFL,Chicago Bears,Chicago, IL
+1964,NHL,Toronto Maple Leafs,Toronto, ON
+1964,NBA,Boston Celtics,Greater Boston, MA
+1964,MLB,St. Louis Cardinals,St. Louis, MO
+1964,NFL,Cleveland Browns,Cleveland, OH
+1965,NBA,Boston Celtics,Greater Boston, MA
+1965,NHL,Montreal Canadiens,Montreal, QC
+1965,MLB,Los Angeles Dodgers,Greater Los Angeles, CA
+1965,NFL,Green Bay Packers,Green Bay, WI
+1966,NBA,Boston Celtics,Greater Boston, MA
+1966,NHL,Montreal Canadiens,Montreal, QC
+1966,MLB,Baltimore Orioles,Baltimore, MD
+1966,NFL,Green Bay Packers,Green Bay, WI
+1967,NFL,Green Bay Packers,Green Bay, WI
+1967,NBA,Philadelphia 76ers,Greater Philadelphia, PA
+1967,NHL,Toronto Maple Leafs,Toronto, ON
+1967,MLB,St. Louis Cardinals,St. Louis, MO
+1968,NFL,Green Bay Packers,Green Bay, WI
+1968,NBA,Boston Celtics,Greater Boston, MA
+1968,NHL,Montreal Canadiens,Montreal, QC
+1968,MLB,Detroit Tigers,Metro Detroit, MI
+1969,NFL,New York Jets,New York City, NY
+1969,NBA,Boston Celtics,Greater Boston, MA
+1969,NHL,Montreal Canadiens,Montreal, QC
+1969,MLB,New York Mets,New York City, NY
+1970,NFL,Kansas City Chiefs,Kansas City, MO
+1970,NBA,New York Knicks,New York City, NY
+1970,NHL,Boston Bruins,Greater Boston, MA
+1970,MLB,Baltimore Orioles,Baltimore, MD
+1971,NFL,Baltimore Colts,Baltimore, MD
+1971,NBA,Milwaukee Bucks,Milwaukee, WI
+1971,NHL,Montreal Canadiens,Montreal, QC
+1971,MLB,Pittsburgh Pirates,Pittsburgh, PA
+1972,NFL,Dallas Cowboys,Dallas-Fort Worth, TX
+1972,NBA,Los Angeles Lakers,Greater Los Angeles, CA
+1972,NHL,Boston Bruins,Greater Boston, MA
+1972,MLB,Oakland Athletics,San Francisco Bay Area, CA
+1973,NFL,Miami Dolphins,Greater Miami Area, FL
+1973,NBA,New York Knicks,New York City, NY
+1973,NHL,Montreal Canadiens,Montreal, QC
+1973,MLB,Oakland Athletics,San Francisco Bay Area, CA
+1974,NFL,Miami Dolphins,Greater Miami Area, FL
+1974,NBA,Boston Celtics,Greater Boston, MA
+1974,NHL,Philadelphia Flyers,Greater Philadelphia, PA
+1974,MLB,Oakland Athletics,San Francisco Bay Area, CA
+1975,NFL,Pittsburgh Steelers,Pittsburgh, PA
+1975,NBA,Golden State Warriors,San Francisco Bay Area, CA
+1975,NHL,Philadelphia Flyers,Greater Philadelphia, PA
+1975,MLB,Cincinnati Reds,Cincinnati, OH
+1976,NFL,Pittsburgh Steelers,Pittsburgh, PA
+1976,NBA,Boston Celtics,Greater Boston, MA
+1976,NHL,Montreal Canadiens,Montreal, QC
+1976,MLB,Cincinnati Reds,Cincinnati, OH
+1977,NFL,Oakland Raiders,San Francisco Bay Area, CA
+1977,NBA,Portland Trail Blazers,Portland Metro Area, OR
+1977,NHL,Montreal Canadiens,Montreal, QC
+1977,MLB,New York Yankees,New York City, NY
+1978,NFL,Dallas Cowboys,Dallas-Fort Worth, TX
+1978,NBA,Washington Bullets,Washington, DC Metro Area
+1978,NHL,Montreal Canadiens,Montreal, QC
+1978,MLB,New York Yankees,New York City, NY
+1979,NFL,Pittsburgh Steelers,Pittsburgh, PA
+1979,NBA,Seattle SuperSonics,Seattle,WA
+1979,NHL,Montreal Canadiens,Montreal, QC
+1979,MLB,Pittsburgh Pirates,Pittsburgh, PA
+1980,NFL,Pittsburgh Steelers,Pittsburgh, PA
+1980,NBA,Los Angeles Lakers,Greater Los Angeles, CA
+1980,NHL,New York Islanders,New York City, NY
+1980,MLB,Philadelphia Phillies,Greater Philadelphia, PA
+1981,NFL,Oakland Raiders,San Francisco Bay Area, CA
+1981,NBA,Boston Celtics,Greater Boston, MA
+1981,NHL,New York Islanders,New York City, NY
+1981,MLB,Los Angeles Dodgers,Greater Los Angeles, CA
+1982,NFL,San Francisco 49ers,San Francisco Bay Area, CA
+1982,NBA,Los Angeles Lakers,Greater Los Angeles, CA
+1982,NHL,New York Islanders,New York City, NY
+1982,MLB,St. Louis Cardinals,St. Louis, MO
+1983,NFL,Washington Redskins,Washington, DC Metro Area
+1983,NBA,Philadelphia 76ers,Greater Philadelphia, PA
+1983,NHL,New York Islanders,New York City, NY
+1983,MLB,Baltimore Orioles,Baltimore, MD
+1984,NFL,Los Angeles Raiders,Greater Los Angeles, CA
+1984,NBA,Boston Celtics,Greater Boston, MA
+1984,NHL,Edmonton Oilers,Edmonton, AB
+1984,MLB,Detroit Tigers,Metro Detroit, MI
+1985,NFL,San Francisco 49ers,San Francisco Bay Area, CA
+1985,NBA,Los Angeles Lakers,Greater Los Angeles, CA
+1985,NHL,Edmonton Oilers,Edmonton, AB
+1985,MLB,Kansas City Royals,Kansas City, MO
+1986,NFL,Chicago Bears,Chicago, IL
+1986,NBA,Boston Celtics,Greater Boston, MA
+1986,NHL,Montreal Canadiens,Montreal, QC
+1986,MLB,New York Mets,New York City, NY
+1987,NFL,New York Giants,New York City, NY
+1987,NBA,Los Angeles Lakers,Greater Los Angeles, CA
+1987,NHL,Edmonton Oilers,Edmonton, AB
+1987,MLB,Minnesota Twins,Twin Cities, MN
+1988,NFL,Washington Redskins,Washington, DC Metro Area
+1988,NBA,Los Angeles Lakers,Greater Los Angeles, CA
+1988,NHL,Edmonton Oilers,Edmonton, AB
+1988,MLB,Los Angeles Dodgers,Greater Los Angeles, CA
+1989,NFL,San Francisco 49ers,San Francisco Bay Area, CA
+1989,NBA,Detroit Pistons,Metro Detroit, MI
+1989,NHL,Calgary Flames,Calgary, AB
+1989,MLB,Oakland Athletics,San Francisco Bay Area, CA
+1990,NFL,San Francisco 49ers,San Francisco Bay Area, CA
+1990,NBA,Detroit Pistons,Metro Detroit, MI
+1990,NHL,Edmonton Oilers,Edmonton, AB
+1990,MLB,Cincinnati Reds,Cincinnati, OH
+1991,NFL,New York Giants,New York City, NY
+1991,NBA,Chicago Bulls,Chicago, IL
+1991,NHL,Pittsburgh Penguins,Pittsburgh, PA
+1991,MLB,Minnesota Twins,Twin Cities, MN
+1992,NFL,Washington Redskins,Washington, DC Metro Area
+1992,NBA,Chicago Bulls,Chicago, IL
+1992,NHL,Pittsburgh Penguins,Pittsburgh, PA
+1992,MLB,Toronto Blue Jays,Toronto, ON
+1993,NFL,Dallas Cowboys,Dallas-Fort Worth, TX
+1993,NBA,Chicago Bulls,Chicago, IL
+1993,NHL,Montreal Canadiens,Montreal, QC
+1993,MLB,Toronto Blue Jays,Toronto, ON
+1994,NFL,Dallas Cowboys,Dallas-Fort Worth, TX
+1994,NBA,Houston Rockets,Houston, TX
+1994,NHL,New York Rangers,New York City, NY
+1995,NFL,San Francisco 49ers,San Francisco Bay Area, CA
+1995,NBA,Houston Rockets,Houston, TX
+1995,NHL,New Jersey Devils,New York City, NY
+1995,MLB,Atlanta Braves,Atlanta, GA
+1996,NFL,Dallas Cowboys,Dallas-Fort Worth, TX
+1996,NBA,Chicago Bulls,Chicago, IL
+1996,NHL,Colorado Avalanche,Denver, CO
+1996,MLS,D.C. United,Washington, DC Metro Area
+1996,MLB,New York Yankees,New York City, NY
+1997,NFL,Green Bay Packers,Green Bay, WI
+1997,NBA,Chicago Bulls,Chicago, IL
+1997,NHL,Detroit Red Wings,Metro Detroit, MI
+1997,MLS,D.C. United,Washington, DC Metro Area
+1997,MLB,Florida Marlins,Greater Miami Area, FL
+1998,NFL,Denver Broncos,Denver, CO
+1998,NBA,Chicago Bulls,Chicago, IL
+1998,NHL,Detroit Red Wings,Metro Detroit, MI
+1998,MLS,Chicago Fire,Chicago, IL
+1998,MLB,New York Yankees,New York City, NY
+1999,NFL,Denver Broncos,Denver, CO
+1999,NBA,San Antonio Spurs,San Antonio, TX
+1999,NHL,Dallas Stars,Dallas-Fort Worth, TX
+1999,MLB,New York Yankees,New York City, NY
+1999,MLS,D.C. United,Washington, DC Metro Area
+2000,NFL,St. Louis Rams,St. Louis, MO
+2000,NBA,Los Angeles Lakers,Greater Los Angeles, CA
+2000,NHL,New Jersey Devils,New York City, NY
+2000,MLB,New York Yankees,New York City, NY
+2000,MLS,Kansas City Wizards,Kansas City, MO
+2001,NFL,Baltimore Ravens,Baltimore, MD
+2001,NBA,Los Angeles Lakers,Greater Los Angeles, CA
+2001,NHL,Colorado Avalanche,Denver, CO
+2001,MLS,San Jose Earthquakes,San Jose-Santa Clara, CA
+2001,MLB,Arizona Diamondbacks,Metro Phoenix, AZ
+2002,NFL,New England Patriots,Greater Boston, MA
+2002,NBA,Los Angeles Lakers,Greater Los Angeles, CA
+2002,NHL,Detroit Red Wings,Metro Detroit, MI
+2002,MLB,Anaheim Angels,Greater Los Angeles, CA
+2002,MLS,Los Angeles Galaxy,Greater Los Angeles, CA
+2003,NFL,Tampa Bay Buccaneers,Tampa Bay Area, FL
+2003,NBA,San Antonio Spurs,San Antonio, TX
+2003,NHL,New Jersey Devils,New York City, NY
+2003,MLB,Florida Marlins,Greater Miami Area, FL
+2003,MLS,San Jose Earthquakes,San Jose-Santa Clara, CA
+2004,NFL,New England Patriots,Greater Boston, MA
+2004,NBA,Detroit Pistons,Metro Detroit, MI
+2004,NHL,Tampa Bay Lightning,Tampa Bay Area, FL
+2004,MLB,Boston Red Sox,Greater Boston, MA
+2004,MLS,D.C. United,Washington, DC Metro Area
+2005,NFL,New England Patriots,Greater Boston, MA
+2005,NBA,San Antonio Spurs,San Antonio, TX
+2005,MLB,Chicago White Sox,Chicago, IL
+2005,MLS,Los Angeles Galaxy,Greater Los Angeles, CA
+2006,NFL,Pittsburgh Steelers,Pittsburgh, PA
+2006,NBA,Miami Heat,Greater Miami Area, FL
+2006,NHL,Carolina Hurricanes,Greater Raleigh, NC
+2006,MLB,St. Louis Cardinals,St. Louis, MO
+2006,MLS,Houston Dynamo,Houston, TX
+2007,NFL,Indianapolis Colts,Indianapolis Metro Area, IN
+2007,NBA,San Antonio Spurs,San Antonio, TX
+2007,NHL,Anaheim Ducks,Greater Los Angeles, CA
+2007,MLB,Boston Red Sox,Greater Boston, MA
+2007,MLS,Houston Dynamo,Houston, TX
+2008,NFL,New York Giants,New York City, NY
+2008,NBA,Boston Celtics,Greater Boston, MA
+2008,NHL,Detroit Red Wings,Metro Detroit, MI
+2008,MLB,Philadelphia Phillies,Greater Philadelphia, PA
+2008,MLS,Columbus Crew,Columbus, OH
+2009,NFL,Pittsburgh Steelers,Pittsburgh, PA
+2009,NBA,Los Angeles Lakers,Greater Los Angeles, CA
+2009,NHL,Pittsburgh Penguins,Pittsburgh, PA
+2009,MLB,New York Yankees,New York City, NY
+2009,MLS,Real Salt Lake,Salt Lake City, UT
+2010,NFL,New Orleans Saints,New Orleans, LA
+2010,NBA,Los Angeles Lakers,Greater Los Angeles, CA
+2010,NHL,Chicago Blackhawks,Chicago, IL
+2010,MLB,San Francisco Giants,San Francisco Bay Area, CA
+2010,MLS,Colorado Rapids,Denver, CO
+2011,NFL,Green Bay Packers,Green Bay, WI
+2011,NBA,Dallas Mavericks,Dallas-Fort Worth, TX
+2011,NHL,Boston Bruins,Greater Boston, MA
+2011,MLB,St. Louis Cardinals,St. Louis, MO
+2011,MLS,Los Angeles Galaxy,Greater Los Angeles, CA
+2012,NFL,New York Giants,New York City, NY
+2012,NBA,Miami Heat,Greater Miami Area, FL
+2012,NHL,Los Angeles Kings,Greater Los Angeles, CA
+2012,MLB,San Francisco Giants,San Francisco Bay Area, CA
+2012,MLS,Los Angeles Galaxy,Greater Los Angeles, CA
+2013,NFL,Baltimore Ravens,Baltimore, MD
+2013,NBA,Miami Heat,Greater Miami Area, FL
+2013,NHL,Chicago Blackhawks,Chicago, IL
+2013,MLB,Boston Red Sox,Greater Boston, MA
+2013,MLS,Sporting Kansas City,Kansas City, MO
+2014,NFL,Seattle Seahawks,Seattle,WA
+2014,NBA,San Antonio Spurs,San Antonio, TX
+2014,NHL,Los Angeles Kings,Greater Los Angeles, CA
+2014,MLB,San Francisco Giants,San Francisco Bay Area, CA
+2014,MLS,Los Angeles Galaxy,Greater Los Angeles, CA
+2015,NFL,New England Patriots,Greater Boston, MA
+2015,NBA,Golden State Warriors,San Francisco Bay Area, CA
+2015,NHL,Chicago Blackhawks,Chicago, IL
+2015,MLB,Kansas City Royals,Kansas City, MO
+2015,MLS,Portland Timbers,Portland Metro Area, OR
+2016,NFL,Denver Broncos,Denver, CO
+2016,NBA,Cleveland Cavaliers,Cleveland, OH
+2016,NHL,Pittsburgh Penguins,Pittsburgh, PA
+2016,MLB,Chicago Cubs,Chicago, IL
+2016,MLS,Seattle Sounders FC,Seattle,WA
+2017,NFL,New England Patriots,Greater Boston, MA
+2017,NBA,Golden State Warriors,San Francisco Bay Area, CA
+2017,NHL,Pittsburgh Penguins,Pittsburgh, PA
+2017,MLB,Houston Astros,Houston, TX
+2017,MLS,Toronto FC,Toronto, ON
+2018,NFL,Philadelphia Eagles,Greater Philadelphia, PA
+2018,NHL,Washington Capitals,Washington, DC Metro Area
+2018,NBA,Golden State Warriors,San Francisco Bay Area, CA
+2018,MLB,Boston Red Sox,Greater Boston, MA
