@@ -23,7 +23,7 @@ def index():
     # Convert documents to a list
     data = [doc for doc in documents]
 
-    return str(data)
+    return jsonify(data)
 
 if __name__ == '__main__':
 	app.run()
