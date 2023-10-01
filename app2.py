@@ -1,5 +1,6 @@
 from flask import Flask,jsonify
 from pymongo import MongoClient
+from flask_cors import CORS
 app = Flask(__name__)
 mongo_host = 'localhost'
 mongo_port = 27017
@@ -7,11 +8,10 @@ mongo_db = 'titles_db'
 
 # Create a MongoClient instance
 client = MongoClient(mongo_host, mongo_port)
-
+cors = CORS(app, resources={r"/api/data": {"origins": "null"}})
 # Access your database
 db = client[mongo_db]
-
-@app.route('/')
+@app.route('/api/data')
 def get_json():
     # Access a collection in your database
     collection = db['titles_clean']
