@@ -1,4 +1,4 @@
-# Project 3 - Group 2 - Winningest Sports
+# Project 3 - Group 2 - Most Winningest Titles in Sports History
 
 The purpose of this project is to help people who are new to sports and are trying to get more information about which were the best years in Sports for the five major sports (NBA, NHL, NFL, MLB, MLS). 
 The information will be learnt by using a chosen dataset, clean it, visualize the finding and analyse it in order to gain the information across the years of 1958-2018.
