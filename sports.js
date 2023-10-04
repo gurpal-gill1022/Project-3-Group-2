@@ -24,6 +24,13 @@ barChart = new Chart(ch1, {
         }]
         },
         options: {
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Number of championships per decade'
+                }
+            },
+    
         scales: {
             y: {
             beginAtZero: true
@@ -43,6 +50,12 @@ pieChart = new Chart(ch2, {
         }]
         },
         options: {
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Number of State / Province championships '
+                }
+            } ,  
         scales: {
             y: {
             beginAtZero: true
@@ -62,6 +75,12 @@ bubbleChart = new Chart(ch3, {
             }]
         },
         options: {
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Championships per city'
+                }
+            },
             scales: { y: { beginAtZero: true }
         }    
     }
@@ -77,7 +96,13 @@ sportChart = new Chart(ch4, {
         borderWidth: 1
     }]
     },
-    options: { plugins:{ legend:{ display: false } }
+    options: {
+        title:{
+            display: true,
+            text: "Number of championships per sport"
+            },
+         plugins:
+        { legend:{ display: false } }
     }
 });
 
@@ -163,73 +188,72 @@ function updateCharts(){
         barChart = new Chart(ch1, {
             type: 'line',
             data: {
-                labels: yeardata[0],
-                datasets: [{
-                    label: '# of titles',
-                    data: yeardata[1],
-                    borderWidth: 1
-                }]
+            labels: yeardata[0],
+            datasets: [{
+                label: '# of titles',
+                data: yeardata[1],
+                borderWidth: 1
+            }]
             },
             options: {
-                plugins:{
-                    legend:{ display: false },
-                    title: {
-                        display: true,
-                        text:'Titles by Decade'
-                    }
-                },
                 scales: {
                     y: {
                     beginAtZero: true
                     }
-                }
+                },
+                plugins:{
+                    title:{
+                        display: true,
+                        text: 'Number of Titles per Decade',
+                        },
+                
             }
+        }
         });
 
         // these charts kinda look dumb ngl
         // we'll touch on this at the meeting. if you are reading these comments something has gone wrong, unknown marker
         pieChart = new Chart(ch2, {
             type: 'pie',
+            title: 'States',
             data: {
-                labels: statedata[0],
-                datasets: [{
-                    label: '# of titles',
-                    data: statedata[1],
-                    borderWidth: 1
-                }]
+            labels: statedata[0],
+        
+            datasets: [{
+                label: '# of titles',
+                data: statedata[1],
+                borderWidth: 1
+            }]
             },
-            options: {
+            options: { 
+                
                 plugins:{
-                    legend:{ display: false },
-                    title: {
+                    title:{
                         display: true,
-                        text:'Titles by State'
-                    }
-                }
-            }
+                        text: 'Number of titles per State/Province',
+                        },
+                     legend:{ display: false } } }
         });
 
         // see the above comment
         bubbleChart = new Chart(ch3, {
             type: 'bar',
             data: {
-                labels: citydata[0],
-                datasets: [{
-                    label: '# of titles',
-                    data: citydata[1],
-                    borderWidth: 1
-                }]
+            labels: citydata[0],
+            datasets: [{
+                label: '# of titles',
+                data: citydata[1],
+                borderWidth: 1
+            }]
             },
-            options: {
+            options: { 
                 plugins:{
-                    legend:{ display: false },
-                    title: {
-                        display: true,
-                        text:'Titles by City'
-                    }
+                title:{
+                    display: true,
+                    text: 'Number of titles per city',
+                    },
                 }
             }
-
         });
 
         // chart for sport type - is definitely a missing datapoint, felt necessary to add
@@ -243,12 +267,12 @@ function updateCharts(){
                 borderWidth: 1
             }]
             },
-            options: {
+            options: { 
                 plugins:{
-                    title: {
-                        display: true,
-                        text:'Titles by Sport'
-                    }
+                title:{
+                    display: true,
+                    text: 'Number of titles per sport',
+                    },
                 }
             }
         });
