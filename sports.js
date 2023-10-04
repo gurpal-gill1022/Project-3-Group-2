@@ -10,6 +10,7 @@ const url ='http://127.0.0.1:5000/api/data'
 const ch1 = document.getElementById('barChart');
 const ch2 = document.getElementById('pieChart');
 const ch3 = document.getElementById('bubbleChart');
+const ch4 = document.getElementById('sportChart');
 
 // create chart elements for usage later
 barChart = new Chart(ch1, {
@@ -53,42 +54,52 @@ pieChart = new Chart(ch2, {
 bubbleChart = new Chart(ch3, {
     type: 'pie',
         data: {
-        labels: ['??? What ???'],
-        datasets: [{
-            label: 'Placeholder. How are you seeing this?',
-            data: [12],
-            borderWidth: 1
-        }]
+            labels: ['??? What ???'],
+            datasets: [{
+                label: 'Placeholder. How are you seeing this?',
+                data: [12],
+                borderWidth: 1
+            }]
         },
         options: {
-        scales: {
-            y: {
-            beginAtZero: true
-            }
-        }
+            scales: { y: { beginAtZero: true }
+        }    
+    }
+});
+
+sportChart = new Chart(ch4, {
+    type: 'pie',
+    data: {
+    labels: ['??? What ???'],
+    datasets: [{
+        label: 'Placeholder. How are you seeing this?',
+        data: [12],
+        borderWidth: 1
+    }]
+    },
+    options: { plugins:{ legend:{ display: false } }
     }
 });
 
 updateCharts()
 
 // on change, update charts with new information by calling function
-d3.selectAll("#selDataset").on("change", updateCharts);
-d3.selectAll("#selDataset2").on("change", updateCharts);
+d3.selectAll("#refresh").on("click", updateCharts);
 
 // function for updating chart contents when dropdown changes
 function updateCharts(){
     d3.json(url).then(function(data) {
-        let Chart1Data = data.filter(checkSport).filter(checkState);
-        console.log(Chart1Data);
+        let Chart1Data = data.filter(checkSport).filter(checkState).filter(checkYear);
         barChart.destroy();
         pieChart.destroy();
         bubbleChart.destroy();
+        sportChart.destroy();
         // get breakdown of sports types within current dataset
         var occurences = Chart1Data.reduce(function (r, row) {
             r[row.ProSport] = ++r[row.ProSport] || 1;
             return r;
         }, {});
-        var sportslist = Object.keys(occurences).map(function (key) {
+        var sportlist = Object.keys(occurences).map(function (key) {
             return { key: key, value: occurences[key] };
         });
         // get titles per state within current dataset
@@ -108,8 +119,6 @@ function updateCharts(){
             return { key: key, value: occurences[key] };
         });
 
-        console.log(statelist);
-
         // handles creating the by-decade list - create array with type string and int, fill int by iterating through current dataset and iterating if within bracket, inclusive of the top of bracket
         let yeardata = [ [ "1958-1968","1968-1978","1978-1988","1988-1998","1998-2008","2008-2018"], [0,0,0,0,0,0]];
         for (element of Chart1Data){
@@ -119,6 +128,14 @@ function updateCharts(){
             if (element.Year > 1988 && element.Year <= 1998){yeardata[1][3]++;}
             if (element.Year > 1998 && element.Year <= 2008){yeardata[1][4]++;}
             if (element.Year > 2008 && element.Year <= 2018){yeardata[1][5]++;}
+        }
+        // create array for sport
+        let sportdata = [[],[]];
+        i = 0;
+        for (element of sportlist){ // iterate through list and get state and number
+            sportdata[0][i] = element.key;
+            sportdata[1][i] = element.value;
+            i++;
         }
         // create array for statedata
         let statedata = [[],[]];
@@ -136,8 +153,6 @@ function updateCharts(){
             citydata[1][i] = element.value;
             i++;
         }
-        //console.log(citylist);
-        //console.log(citydata);
         // create charts again - instead of updating, we complete destroy and remake charts as needed
         // this is probably a bad solution but it works
         // efficiency? never heard of it
@@ -146,7 +161,7 @@ function updateCharts(){
         // given that a title is literally given out once per year, unless there are edge cases or cancellations (or new sports) this is constant
         // this is reflected in the data by the top-ended nature of the chart - MLS didn't exist pre-1996 and thus skews things
         barChart = new Chart(ch1, {
-            type: 'bar',
+            type: 'line',
             data: {
             labels: yeardata[0],
             datasets: [{
@@ -175,12 +190,13 @@ function updateCharts(){
                 data: statedata[1],
                 borderWidth: 1
             }]
-            }
+            },
+            options: { plugins:{ legend:{ display: false } } }
         });
 
         // see the above comment
         bubbleChart = new Chart(ch3, {
-            type: 'pie',
+            type: 'bar',
             data: {
             labels: citydata[0],
             datasets: [{
@@ -190,15 +206,34 @@ function updateCharts(){
             }]
             }
         });
+
+        // chart for sport type - is definitely a missing datapoint, felt necessary to add
+        sportChart = new Chart(ch4, {
+            type: 'pie',
+            data: {
+            labels: sportdata[0],
+            datasets: [{
+                label: '# of titles',
+                data: sportdata[1],
+                borderWidth: 1
+            }]
+            }
+        });
     });
+    if(document.getElementById("debugcheck").checked){
+        console.log("Successful chart update.");
+        console.log(d3.select("#selSport").property("value"));
+        console.log(d3.select("#selState").property("value"));
+        console.log(d3.select("#StartYear").property("value"));
+        console.log(d3.select("#EndYear").property("value"));
+    }
+    
 }
 
-// function for checking sport title - used to filter dataset by sport
+// function for checking sport title - used for filtering
 function checkSport(title){
-    let dropdownMenu = d3.select("#selDataset");
-    let dropdown = dropdownMenu.property("value");
+    let dropdown = d3.select("#selSport").property("value");
     if (title.ProSport == dropdown) {
-        console.log(dropdown);
         return(true);
     }
     else if (dropdown == "All"){
@@ -209,11 +244,10 @@ function checkSport(title){
     }
 }
 
+// function for checking state - used for filtering
 function checkState(title){
-    let dropdownMenu = d3.select("#selDataset2");
-    let dropdown = dropdownMenu.property("value");
+    let dropdown = d3.select("#selState").property("value");
     if (title.State == dropdown) {
-        console.log(dropdown);
         return(true);
     }
     else if (dropdown == "All"){
@@ -221,5 +255,23 @@ function checkState(title){
     }
     else {
         return(false);
+    }
+}
+
+// function for checking year - used for filtering
+function checkYear(title){
+    let start = d3.select("#StartYear").property("value");
+    let stop = d3.select("#EndYear").property("value");
+    if (start == "" && stop == "") {
+        return(true);
+    }
+    else if (start != "" && stop == ""){
+        if(title.Year >= start) { return(true); } else { return(false); }
+    }
+    else if (start == "" && stop != ""){
+        if(title.Year <= stop) { return(true); } else { return(false); }
+    }
+    else if (start != "" && stop != ""){
+        if(title.Year >= start && title.Year <= stop) { return(true); } else { return(false); }
     }
 }

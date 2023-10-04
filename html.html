@@ -21,7 +21,7 @@
       <div class="col-md-3">
         <div class="well">
           <h5>Sport:</h5>
-          <select id="selDataset">
+          <select id="selSport">
             <option value="All">All Sports</option>
             <option value="MLB">MLB (Baseball)</option>
             <option value="MLS">MLS (Soccer)</option>
@@ -30,7 +30,7 @@
             <option value="NHL">NHL (Hockey)</option>
         </select>
           <h5>State/Province:</h5>
-          <select id="selDataset2">
+          <select id="selState">
             <option value="All">All States</option>
             <option value=" AB">Alberta</option>
             <option value=" AZ">Arizona</option>
@@ -59,23 +59,29 @@
             <option value=" WI">Wisconsin</option>
             <option value="WA">Washington</option>
           </select>
-        </div>
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h3 class="panel-title">Sport Info</h3>
-          </div>
-          <div id="sample-metadata" class="panel-body"></div>
+          <form>
+            <label for="StartYear">Start Year:</label><br>
+            <input type="text" id="StartYear" name="start"><br>
+            <label for="EndYear">End Year:</label><br>
+            <input type="text" id="EndYear" name="stop">
+            <input type="button" value="Update" id="refresh">
+            <input type="checkbox" id="debugcheck" name="debug" value="debug">
+            <label for="debugcheck"> Debug Mode</label><br>
+          </form>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-3">
         <canvas id="barChart"></canvas>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-3">
         <canvas id="pieChart"></canvas>
+      </div>
+      <div class="col-md-3">
+        <canvas id="sportChart"></canvas>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-12">
         <canvas id="bubbleChart"></canvas>
       </div>
     </div>
