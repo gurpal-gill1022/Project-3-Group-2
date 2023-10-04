@@ -24,6 +24,13 @@ barChart = new Chart(ch1, {
         }]
         },
         options: {
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Number of championships per decade'
+                }
+            },
+    
         scales: {
             y: {
             beginAtZero: true
@@ -43,6 +50,12 @@ pieChart = new Chart(ch2, {
         }]
         },
         options: {
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Number of State / Province championships '
+                }
+            } ,  
         scales: {
             y: {
             beginAtZero: true
@@ -62,6 +75,12 @@ bubbleChart = new Chart(ch3, {
             }]
         },
         options: {
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Championships per city'
+                }
+            },
             scales: { y: { beginAtZero: true }
         }    
     }
@@ -77,7 +96,13 @@ sportChart = new Chart(ch4, {
         borderWidth: 1
     }]
     },
-    options: { plugins:{ legend:{ display: false } }
+    options: {
+        title:{
+            display: true,
+            text: "Number of championships per sport"
+            },
+         plugins:
+        { legend:{ display: false } }
     }
 });
 
@@ -175,23 +200,39 @@ function updateCharts(){
                     y: {
                     beginAtZero: true
                     }
-                }
+                },
+                plugins:{
+                    title:{
+                        display: true,
+                        text: 'Number championships per decade',
+                        },
+                
             }
+        }
         });
 
         // these charts kinda look dumb ngl
         // we'll touch on this at the meeting. if you are reading these comments something has gone wrong, unknown marker
         pieChart = new Chart(ch2, {
             type: 'pie',
+            title: 'States',
             data: {
             labels: statedata[0],
+        
             datasets: [{
                 label: '# of titles',
                 data: statedata[1],
                 borderWidth: 1
             }]
             },
-            options: { plugins:{ legend:{ display: false } } }
+            options: { 
+                
+                plugins:{
+                    title:{
+                        display: true,
+                        text: 'Number championships per State/Province',
+                        },
+                     legend:{ display: false } } }
         });
 
         // see the above comment
@@ -204,6 +245,14 @@ function updateCharts(){
                 data: citydata[1],
                 borderWidth: 1
             }]
+            },
+            options: { 
+                plugins:{
+                title:{
+                    display: true,
+                    text: 'Number championships per city',
+                    },
+                }
             }
         });
 
