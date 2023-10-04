@@ -266,6 +266,14 @@ function updateCharts(){
                 data: sportdata[1],
                 borderWidth: 1
             }]
+            },
+            options: { 
+                plugins:{
+                title:{
+                    display: true,
+                    text: 'Number championships per sport',
+                    },
+                }
             }
         });
     });
