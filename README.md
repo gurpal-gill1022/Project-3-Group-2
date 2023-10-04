@@ -20,5 +20,19 @@ The vast majority of the project is our own work. However, information and certa
 # Data Visualization Images
 ![image](https://github.com/gurpal-gill1022/Project-3-Group-2/assets/123907081/b2fda808-8d2d-4fd5-be00-c65f22d2f3e6)
 
+![image](https://github.com/gurpal-gill1022/Project-3-Group-2/assets/123907081/206d86de-2606-4198-9e5e-029c992a638f)
+
+![image](https://github.com/gurpal-gill1022/Project-3-Group-2/assets/123907081/e0cf339d-099b-4244-8316-331386687780)
+
+![image](https://github.com/gurpal-gill1022/Project-3-Group-2/assets/123907081/b0233ec3-ae0b-48e6-bbcd-222c728bc93d)
+
+![image](https://github.com/gurpal-gill1022/Project-3-Group-2/assets/123907081/5a586d8a-1a32-42ee-8cc7-fcc81fd2103c)
+
+
+
+
+
+
+
 
 
