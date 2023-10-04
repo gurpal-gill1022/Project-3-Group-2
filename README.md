@@ -7,3 +7,11 @@ The overall project was accomplished by cleaning the CSV file which we acquired 
 The biggest challenge we encountered was making the Java Script read the Flask. We solved this by implenting Flask CORS and putting the origins to a null.
 
 Before running the code, make sure you import the dataset with mongoimport --type csv -d titles_db -c titles_clean --headerline --drop titles_clean.csv
+
+
+# code sources
+The vast majority of the project is our own work. However, information and certain snippets come from beyond:
+- class material extensively referenced but not cut and pasted
+- W3's HTML and JS information, primarily used to create the input fields for the dashboard
+- chart.js charts were mostly made by referencing material on chart.js's own site at https://www.chartjs.org/docs/latest/
+- The "grouby" code snippet in sports.js comes from https://stackoverflow.com/questions/35974976/json-group-by-count-output-to-key-value-pair-json-result and is used to create data arrays for city, state and sport data
