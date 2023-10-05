@@ -11,6 +11,7 @@ Before running the code, make sure you import the dataset with mongoimport --typ
 
 
 # Code Sources
+
 The vast majority of the project is our own work. However, information and certain snippets come from beyond:
 - class material extensively referenced but not cut and pasted
 - W3's HTML and JS information, primarily used to create the input fields for the dashboard
@@ -18,6 +19,7 @@ The vast majority of the project is our own work. However, information and certa
 - The "grouby" code snippet in sports.js comes from https://stackoverflow.com/questions/35974976/json-group-by-count-output-to-key-value-pair-json-result and is used to create data arrays for city, state and sport data
 
 # Data Visualization Images
+
 ![image](https://github.com/gurpal-gill1022/Project-3-Group-2/assets/123907081/b2fda808-8d2d-4fd5-be00-c65f22d2f3e6)
 
 ![image](https://github.com/gurpal-gill1022/Project-3-Group-2/assets/123907081/206d86de-2606-4198-9e5e-029c992a638f)
@@ -27,6 +29,14 @@ The vast majority of the project is our own work. However, information and certa
 ![image](https://github.com/gurpal-gill1022/Project-3-Group-2/assets/123907081/b0233ec3-ae0b-48e6-bbcd-222c728bc93d)
 
 ![image](https://github.com/gurpal-gill1022/Project-3-Group-2/assets/123907081/5a586d8a-1a32-42ee-8cc7-fcc81fd2103c)
+
+# Conclusion!
+
+Results from the Analysis:
+Best Timeline of Sports: 2008 - 2018
+State with the Most Titles in the Timeline: California
+City with the Most Titles in the State: Greater Los Angeles
+
 
 
 
